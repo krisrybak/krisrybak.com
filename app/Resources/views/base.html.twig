@@ -31,8 +31,16 @@
         <link rel="apple-touch-icon" href="{{ asset_url }}">
         {% endimage %}
 
+        <!-- Css -->
+        <!--[if gte IE 9]>
+          <style type="text/css">
+            .gradient {
+               filter: none;
+            }
+          </style>
+        <![endif]-->
         {% block stylesheets %}
-            {% stylesheets filter='cssrewrite, ?catchamonkey_cssmin'
+            {% stylesheets filter='cssrewrite'
                 'bundles/krisrybaklayout/css/*.css' %}
             <link rel="stylesheet" type="text/css" href="{{ asset_url }}" />
             {% endstylesheets %}
@@ -49,6 +57,7 @@
             {% javascripts
                 '@KrisrybakLayoutBundle/Resources/public/js/jquery-1.9.1.min.js'
                 '@KrisrybakLayoutBundle/Resources/public/js/jquery.easing.min.js'
+                '@KrisrybakLayoutBundle/Resources/public/js/navigation.js'
                 output='js/layout.js'
             %}
             <script src="{{ asset_url }}"></script>
