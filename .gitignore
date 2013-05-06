@@ -1,0 +1,11 @@
+web/bundles/
+app/bootstrap.php.cache
+app/cache/*
+app/logs/*
+build/
+vendor
+web/css
+web/js
+web/images
+web/favicon.ico
+web/favicon_favicon_1.ico
