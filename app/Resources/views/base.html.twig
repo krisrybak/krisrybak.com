@@ -45,12 +45,14 @@
             {% include 'KrisrybakLayoutBundle:Element:nav.html.twig' %}
         {% endblock %}
         {% block body %}{% endblock %}
-        {% block javascripts
-            '@KrisrybakLayoutBundle/Resources/public/js/jquery.min.js'
-            '@KrisrybakLayoutBundle/Resources/public/js/jquery.easing.1.3.js'
-            output='js/layout.js'
-        %}
-        <script src="{{ asset_url }}"></script>
+        {% block javascripts %}
+            {% javascripts
+                '@KrisrybakLayoutBundle/Resources/public/js/jquery-1.9.1.min.js'
+                '@KrisrybakLayoutBundle/Resources/public/js/jquery.easing.min.js'
+                output='js/layout.js'
+            %}
+            <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
         {% endblock %}
     </body>
 </html>
