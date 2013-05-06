@@ -1,0 +1,9 @@
+krisrybak_layout:
+    resource: "@KrisrybakLayoutBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+krisrybak_home:
+    resource: "@KrisrybakHomeBundle/Controller/"
+    type:     annotation
+    prefix:   /
