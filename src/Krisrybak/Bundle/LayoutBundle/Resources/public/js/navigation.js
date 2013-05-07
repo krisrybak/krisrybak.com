@@ -11,3 +11,8 @@ $("ul.nav li").hover(
     $(this).find("span").fadeOut();
   }
 );
+/*
+$("ul.nav li").on("click", function(event){
+    console.log($(this).text());
+});
+*/
