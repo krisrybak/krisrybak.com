@@ -48,11 +48,9 @@
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
-        {% block nav %}
-            {% include 'KrisrybakLayoutBundle:Element:nav.html.twig' %}
+    <body class="gradient">
+        {% block body %}
         {% endblock %}
-        {% block body %}{% endblock %}
         {% block javascripts %}
             {% javascripts
                 '@KrisrybakLayoutBundle/Resources/public/js/jquery-1.9.1.min.js'
