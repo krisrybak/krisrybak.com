@@ -1,4 +1,4 @@
-$("ul.nav li div span").css("display","none");
+$("ul.nav li div span").css("display","block");
 $("ul.nav li").hover(
   function () {
     $(this).find("div").toggleClass("active");
@@ -7,6 +7,6 @@ $("ul.nav li").hover(
   function ()
   {
     $(this).find("div").toggleClass("active");
-    $(this).find("span").fadeOut();
+    $(this).find("span");
   }
 );
