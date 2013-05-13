@@ -1,4 +1,4 @@
-$("ul.nav li div span").css("display","none");
+$("ul.nav li div span").css("display","block");
 $("ul.nav li").on({
   mouseenter: function(e){
     e.stopPropagation();

@@ -48,17 +48,14 @@
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
-        {% block nav %}
-            {% include 'KrisrybakLayoutBundle:Element:nav.html.twig' %}
+    <body class="gradient">
+        {% block body %}
         {% endblock %}
-        {% block body %}{% endblock %}
         {% block javascripts %}
             {% javascripts
                 '@KrisrybakLayoutBundle/Resources/public/js/modernizr-2.6.2.min.js'
                 '@KrisrybakLayoutBundle/Resources/public/js/jquery-1.9.1.min.js'
                 '@KrisrybakLayoutBundle/Resources/public/js/jquery.easing.min.js'
-                '@KrisrybakLayoutBundle/Resources/public/js/navigation.js'
                 output='js/layout.js'
             %}
             <script src="{{ asset_url }}"></script>

@@ -1,0 +1,16 @@
+{% extends 'KrisrybakLayoutBundle:Default:layout.html.twig' %}
+    {% block javascripts %}
+    {{ parent() }}
+    {% javascripts
+        '@KrisrybakLayoutBundle/Resources/public/js/navigation-active.js'
+        '@KrisrybakLayoutBundle/Resources/public/js/navigation-plugin.js'
+        output='js/layout.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    {% endblock %}
+    {% block nav %}
+        {% include 'KrisrybakLayoutBundle:Element:nav_active.html.twig' %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}

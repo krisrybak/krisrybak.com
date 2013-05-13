@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+    <div class="row">
+        {% block nav %}
+        {% endblock %}
+        {% block content %}
+        {% endblock %}
+    </div>
+{% endblock %}
+{% block javascripts %}
+{{ parent() }}
+{% endblock %}
